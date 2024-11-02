@@ -1,0 +1,34 @@
+#!/bin/bash
+# Motivational Animal Script
+
+# Array of animal ASCII art
+animals=(
+"   /\\_/\\  
+  ( o.o )  
+   > ^ <   - \"Keep going! You're pawsome!\" 🐱"
+ 
+"   (o)<   - \"Owl be watching over your progress!\" 🦉
+  /)__)"
+" \"🦄 Be your own unicorn! 🦄\"
+       🦄"
+ 
+"   (\\_/)
+  (•ㅅ•) - \"You're otterly amazing!\" 🦦
+  /つ 🧡"
+ 
+" (.__.) - \"Penguin up and try again!\" 🐧
+ /______)"
+)
+
+# Pick a random animal and display it
+random_animal=${animals[$RANDOM % ${#animals[@]}]}
+echo -e "$random_animal"
+
+# Add a slight delay for effect
+sleep 2
+
+# Compliment for extra motivation
+compliments=("You're doing a fantastic job!" "You're on fire! 🔥" "The world is brighter with you in it!" "You're unstoppable!")
+random_compliment=${compliments[$RANDOM % ${#compliments[@]}]}
+echo -e "\n$random_compliment"
+
