@@ -1,0 +1,58 @@
+import random
+import time
+
+# List of ASCII animals with messages
+animals = [
+    {
+        "image": """
+          /\\_/\\  
+         ( o.o )  
+          > ^ <  
+        """,
+        "message": "You're pawsome! 🐱 Keep going!"
+    },
+    {
+        "image": """
+           (o)<   
+          /)__)"
+        """,
+        "message": "Owl be watching over your progress! 🦉"
+    },
+    {
+        "image": """
+          (\\_/)  
+         ( •ㅅ•)  
+         /つ 🧡
+        """,
+        "message": "You're otterly amazing! 🦦"
+    },
+    {
+        "image": """
+         (.__.)
+         /______)"
+        """,
+        "message": "Penguin up and try again! 🐧"
+    },
+    {
+        "image": """
+            \\ \\   
+             \\ \\_🦄 
+              ( -.-)
+               o_(")(")
+        """,
+        "message": "Be your own unicorn! 🦄"
+    }
+]
+
+# Pick a random animal and display it
+def show_motivational_animal():
+    animal = random.choice(animals)
+    print("\n🌟 Motivational Animal of the Day 🌟\n")
+    print(animal["image"])
+    print(animal["message"])
+    print("\nKeep up the great work!\n")
+
+# Main function to run the script
+if __name__ == "__main__":
+    show_motivational_animal()
+
